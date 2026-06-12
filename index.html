@@ -495,6 +495,49 @@
           <input type="text" id="bairro" required>
         </div>
 
+         <div class="form-grupo">
+           <div class="form-grupo">
+  <label>Tipo de Entrega *</label>
+  <select id="tipo-entrega" required onchange="toggleEndereco()">
+    <option value="">Selecione</option>
+    <option value="Entrega no endereço">Entrega no endereço - Frete grátis Porto Alegre</option>
+    <option value="Retirada na loja">Retirada na Loja - Av. Protásio Alves, 1073</option>
+  </select>
+</div>
+
+<div id="info-retirada" style="display:none; background:#fff3cd; padding:15px; border-radius:10px; margin-bottom:20px; border-left: 4px solid #d4af37;">
+  <strong>📍 Endereço para Retirada:</strong><br>
+  Av. Protásio Alves, 1073<br>
+  Bairro Rio Branco - Porto Alegre/RS<br>
+  <small>Horário: Seg a Sex 08h às 17h | Sáb 9h às 16h</small>
+</div>
+
+<div id="campos-endereco">
+  <div class="form-grupo">
+    <label>CEP *</label>
+    <input type="text" id="cep" placeholder="00000-000" maxlength="9" onblur="buscarCEP()">
+  </div>
+
+  <div class="form-grupo">
+    <label>Endereço *</label>
+    <input type="text" id="endereco">
+  </div>
+
+  <div class="form-grupo">
+    <label>Número *</label>
+    <input type="text" id="numero">
+  </div>
+
+  <div class="form-grupo">
+    <label>Complemento</label>
+    <input type="text" id="complemento" placeholder="Apto, bloco, etc">
+  </div>
+
+  <div class="form-grupo">
+    <label>Bairro *</label>
+    <input type="text" id="bairro">
+  </div>
+</div>
         <div class="form-grupo">
           <label>Forma de Pagamento *</label>
           <select id="pagamento" required>
